@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="./js/script.js" type="text/javascript" defer></script>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href='./img/pokeball.png' rel='shortcut icon' type='image/png'>
+</head>
+<body background="./img/background.png">
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <img class="logo" src="./img/pokedex.png"/>
+            </nav>
+        </header>
+    
+        <form action="" onsubmit="searchPokemon(event)">
+            <input type="text" name="pokemon" autocomplete="off">
+            <div data-poke-card class="poke-card">
+                <div data-poke-name class="poke-name">¡Busca un Pokémon!</div>
+                <div data-poke-img-container class="img-container">
+                    <img data-poke-img class="poke-img" src="./img/poke-shadow.png"/>
+                </div>
+                <div data-poke-id></div>
+                <div data-poke-types class="poke-types"></div>
+                <div data-poke-stats class="poke-stats"></div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Creado por <a href="https://github.com/FelFT">Felipe Flores</a> para Launch X - Misión Frontend - 2022</p> 
+    </footer>
+</body>
+</html>
